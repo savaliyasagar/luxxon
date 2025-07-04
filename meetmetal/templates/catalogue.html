@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+<div class="catabody">
+    <div class="catacontainer">
+        <div class="flipbook">
+            {% for page in catalog_pages %}
+            <div class="page">
+                <div class="page-front"><img src="{{ page.front_image.url }}" alt="Page {{ page.page_number }}" class="img-fluid"></div>
+                <div class="page-back"><img src="{{ page.back_image.url }}" alt="Page {{ page.page_number }}" class="img-fluid"></div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="controls">
+            <button onclick="flipPrev()">Prev</button>
+            <button onclick="flipNext()">Next</button>
+        </div>
+        <button class="my-3 btn btn-outline-dark" onclick="downloadPDF()">Download PDF</button>
+    </div>
+</div>
+{% endblock content %}

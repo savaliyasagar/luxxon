@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ subproduct.name }} - Sub Subproducts</h1>
+    
+    <div class="row">
+        {% for subsubproduct in subsubproducts %}
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ subsubproduct.image.url }}" class="card-img-top" alt="{{ subsubproduct.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ subsubproduct.name }}</h5>
+                    <p class="card-text">{{ subsubproduct.description }}</p>
+                    <a href="{% url 'subsubproduct_detail' subsubproduct.id %}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

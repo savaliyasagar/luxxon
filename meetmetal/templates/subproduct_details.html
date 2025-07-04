@@ -1,0 +1,45 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+<main class="main">
+    <h2 class="mainh2">{{ subproduct.name }}</h2>
+    <section id="content" class="content-wrapper">
+        <aside class="category-box">
+            <h5>Product Categories</h5>
+            <ul>
+                {% for product in subproduct.product.subproducts.all %}
+                <li><a href="{{ product.get_absolute_url }}" class="animated-link">{{ product.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </aside>
+        <div class="product-showcase">
+            <div class="image-container">
+                <img src="{{ subproduct.before_image.url }}" alt="{{ subproduct.name }}" class="product-image" id="productImage">
+            </div>
+        </div>
+    </section>
+
+    <section id="product-table" class="table-container">
+        <h2 class="text-center">Product Specifications</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Code</th>
+                    <th>Size(Inch)</th>
+                    <th>Inquiry</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for detail in subproduct.details.all %}
+                <tr>
+                    <td>{{ detail.product_code }}</td>
+                    <td>{{ detail.size }}</td>
+                    <td><a href="https://wa.me/6353745537" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</main>
+{% endblock content %}
+

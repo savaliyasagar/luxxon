@@ -1,0 +1,190 @@
+.aboutcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.abouthero {
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+.abouthero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.abouthero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.abouthero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.abouthero-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Content Sections */
+.about-section, .quality-section {
+    padding: 6rem 15px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content, .image-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    color: #f19a31;
+    margin-bottom: 1.5rem;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Commitment Section */
+.commitment-section {
+    background-color: var(--white);
+    padding: 6rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f19a31;
+    margin-bottom: 3rem;
+}
+
+.commitment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.commitment-item {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.commitment-item:hover {
+    transform: translateY(-5px);
+}
+
+.commitment-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commitment-icon .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.commitment-item h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #f19a31;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    animation: slideInRight 2s ease-out forwards;
+}
+
+.slide-in-left {
+    opacity: 0;
+    animation: slideInLeft 2s ease-out forwards;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .content-wrapper, .content-wrapper.reverse {
+        flex-direction: column;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+    }
+
+    .abouthero-title {
+        font-size: 2.5rem;
+    }
+
+    .abouthero-subtitle {
+        font-size: 1rem;
+    }
+
+    .commitment-grid {
+        grid-template-columns: 1fr;
+    }
+}

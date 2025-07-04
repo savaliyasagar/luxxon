@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+<header id="hero" style="background-image: url('{{ blog_banner.banner_image.url }}');">
+    <div class="blogcontainer">
+        <h1>Discover Quality Hardware Solutions</h1>
+        <p>Explore our blog for the latest in hardware innovations and tips.</p>
+    </div>
+</header>
+
+<main id="blog" class="blogcontainer">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-grid" id="blogPosts">
+        {% for i in blog_data %}
+        <article class="blog-post">
+            <img src="{{i.Blog_image.url}}" class="img-fluid" alt="The Beauty of Brass Hinges">
+            <div class="blog-post-content">
+                <span class="category">{{i.name}}</span>
+                <h3>{{i.heading}}</h3>
+                <p>{{i.description}}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</main>
+
+
+
+{% endblock content %}

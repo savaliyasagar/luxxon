@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+
+<div class="subproductmain">
+    <h2 class="text-center mb-3">{{ product.name }} Variants</h2>
+    <div class="image-grid">
+        {% for subproduct in subproducts %}
+        <a href="{{ subproduct.get_absolute_url }}">
+            <div class="changeimg">
+                <img src="{{ subproduct.before_image.url }}" alt="{{ subproduct.name }}" class="image-default">
+                <img src="{{ subproduct.after_image.url }}" alt="{{ subproduct.name }}" class="image-hover">
+                <div class="image-text">
+                    <p>{{ subproduct.name }}</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %} 
+    </div>
+</div>
+{% endblock content %}
+

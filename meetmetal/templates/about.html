@@ -1,0 +1,72 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="abouthero" style="background-image: url('{{ about_banner.banner_image.url }}');">
+        <div class="abouthero-content aboutcontainer">
+            <h1 class="abouthero-title">About LUXXON</h1>
+            <p class="abouthero-subtitle">Crafting Excellence in Brass Hardware</p>
+        </div>
+    </section>  
+
+    <section class="about-section aboutcontainer">
+        <div class="content-wrapper">
+            <div class="text-content fade-in">
+                <h2>Our Story</h2>
+                <p>{{ about_data.ourstory }}</p>
+            </div>
+            <div class="image-content slide-in-right">
+                <img src="{{ about_data.storyimg.url }}" alt="LUXXON Workshop" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="quality-section">
+        <div class="content-wrapper aboutcontainer reverse">
+            <div class="text-content fade-in">
+                <h2>Our Quality Promise</h2>
+                <p>{{ about_data.quality }}</p>
+            </div>
+            <div class="image-content slide-in-left">
+                <img src="{{ about_data.qualityimg.url }}" alt="Quality Control" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="commitment-section">
+        <div class="aboutcontainer">
+            <h2 class="section-title">Our Commitments</h2>
+            <div class="commitment-grid">
+                <div class="commitment-item fade-in">
+                    <div class="commitment-icon">
+                        <img src="{% static 'images/satishfaction.png' %}" alt="Satisfaction Icon" class="icon">
+                    </div>
+                    <h3>Satisfaction</h3>
+                    <p>Customer satisfaction is our top priority. We are committed to delivering high-quality brass hardware solutions, ensuring reliability, timely service, and tailored support to exceed our customers' expectations.</p>
+                </div>
+                <div class="commitment-item fade-in">
+                    <div class="commitment-icon">
+                        <img src="{% static 'images/qualityassurance.png' %}" alt="Quality Assurance Icon" class="icon">
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>We're dedicated to unmatched quality assurance, ensuring every brass hardware component, from hinges to tower bolts, meets the highest standards of durability, precision, and performance. Excellence is our promise in every product we deliver.</p>
+                </div>
+                <div class="commitment-item fade-in">
+                    <div class="commitment-icon">
+                        <img src="{% static 'images/valueled.png' %}" alt="Value Icon" class="icon">
+                    </div>
+                    <h3>Value-Led</h3>
+                    <p>Our operations are driven by core values of quality, integrity, and innovation. We deliver exceptional brass hardware solutions that add lasting value to our customers' businesses.</p>
+                </div>
+                <div class="commitment-item fade-in">
+                    <div class="commitment-icon">
+                        <img src="{% static 'images/integrity.png' %}" alt="Integrity Icon" class="icon">
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>Integrity is the foundation of everything we do at LUXXON. We are committed to transparency, honesty, and reliability in every interaction, ensuring trust and long-lasting relationships with our customers. Our brass hardware solutions reflect our unwavering dedication to ethical practices and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock content %}

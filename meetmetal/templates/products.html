@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+
+<header class="hero" style="background-image: url('{{ product_banner.banner_image.url }}');">
+    <div class="hero-content">
+        <h1>Premium Hardware Solutions</h1>
+        <p>Discover our range of high-quality products for all your needs</p>
+    </div>
+</header>
+
+<main class="productcontainer">
+    {% for product in product_data %}
+    <section class="product-section {% if forloop.counter|divisibleby:2 %}right-to-left{% else %}left-to-right{% endif %}">
+        {% if forloop.counter|divisibleby:2 %}
+        <div class="product-info">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <a href="{{ product.get_absolute_url }}" class="btn btn-outline-warning">Learn More</a>
+        </div>
+        <div class="product-image">
+            <a href="{{ product.get_absolute_url }}"><img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-img"></a>
+        </div>
+        {% else %}
+        <div class="product-image">
+            <a href="{{ product.get_absolute_url }}"><img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-img"></a>
+        </div>
+        <div class="product-info">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <a href="{{ product.get_absolute_url }}" class="btn btn-outline-warning">Learn More</a>
+        </div>
+        {% endif %}
+    </section>
+    {% endfor %}
+</main>
+
+{% endblock content %}

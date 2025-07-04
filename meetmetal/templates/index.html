@@ -1,0 +1,115 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+
+    <div id="carouselExampleAutoplaying" class="carousel slide banner" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{home_data.banner1.url}}" class="d-block w-100 img-fluid" alt="banner1">
+            </div>
+            <div class="carousel-item">
+                <img src="{{home_data.banner2.url}}" class="d-block w-100 img-fluid" alt="banner2">
+            </div>
+            <div class="carousel-item">
+                <img src="{{home_data.banner3.url}}" class="d-block w-100 img-fluid" alt="banner3">
+            </div>
+            <div class="carousel-item">
+                <img src="{{home_data.banner4.url}}" class="d-block w-100 img-fluid" alt="banner4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <div class="row featurette mx-5 my-5 justify-content-center">
+        <div class="col-md-5 slide-up">
+            <h2 class="featurette-heading fw-normal lh-1">Welcome to the <span class="text-danger">Luxxon.</span></h2>
+            <p class="lead">Meet Metal is a distinguished & highly trusted enterprise specializing in stainless steel
+                hardware, proudly
+                headquartered in Jamnagar, India, with an impressive legacy and spanning over 05 years. Throughout our
+                journey, we have played a pivotal role in shaping the landscape of the hardware industry in India,
+                standing
+                as one of the pioneering manufacturers of stainless steel hinges. Our ascent to the forefront of
+                industry was
+                marked by a relentless commitment to crafting high-quality stainless steel hardware products. At the
+                heart
+                of our enterprise lies in profound sense of ownership, driving us to consistently deliver impeccable for
+                the
+                stainless steel solutions to our esteerned elientele. We manufacture all items in different finishes
+                such as
+                Matt, Satin, Mirror, etc. Our products can also be customised as per customer's specifications.</p>
+        </div>
+        <div class="col-md-5 slide-up">
+            <img src="{% static 'images/welcome.png' %} " class="img-fluid welcomeimg" alt="500*500" srcset="">
+        </div>
+    </div>
+
+    <div class="products ourproducts">
+        <h2 class="text-center">Our Products</h2>
+        <div class="row justify-content-center container m-auto image-containerr">
+            {% for product in product_data %}
+            <div class="imagecontainer col-md-4 slide-up">
+                <a href="{{ product.get_absolute_url }}">
+                <img src="{{ product.homeproductimage.url }}" alt="{{ product.name }}" class="col-md-4 my-2" srcset="">
+                <div class="hover-text">
+                    <p>{{ product.name }}</p>
+                </div>
+                </a>     
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    <h2 class="text-center" style="margin-top:120px">Testimonials</h2>
+    <div class="testimonialbody">
+        <div class="testimonial-container">
+            <div class="testimonial-wrapper">
+                {% for i in Testimonial_data %}
+                <div class="testimonial">
+                    <img src="{{i.image.url}}" alt="{{i.name}}">
+                    <p>{{i.description}}</p>
+                    <span class="author">{{i.name}}</span>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="indicator-container"></div>
+        </div>
+    </div>
+    <h3 class="text-center gallery">Our Gallery</h3>
+    <div class="carousel">
+        <div class="group">
+            <div class="card"><img src="{{home_data.gallery1.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery2.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery3.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery4.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery5.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery6.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery7.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery8.url}}" alt=""></div>
+        </div>
+
+        <div aria-hidden class="group">
+            <div class="card"><img src="{{home_data.gallery1.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery2.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery3.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery4.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery5.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery6.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery7.url}}" alt=""></div>
+            <div class="card"><img src="{{home_data.gallery8.url}}" alt=""></div>
+        </div>
+    </div>
+    
+    {% endblock content %}
