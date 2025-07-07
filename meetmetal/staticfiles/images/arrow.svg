@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-hover-" transform="translate(-537.000000, -823.000000)">
+            <g id="Header" transform="translate(-1.000000, 0.000000)">
+                <g id="Categiories" transform="translate(216.000000, 0.000000)">
+                    <g id="arrow" transform="translate(322.000000, 823.000000)">
+                        <path d="M31.0710678,28 L28.5355339,25.4644661 L29.9497475,24.0502525 L34.8994949,29 L33.4852814,30.4142136 L29.9497475,33.9497475 L28.5355339,32.5355339 L31.0710678,30 L23,30 L23,28 L31.0710678,28 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                        <rect id="Rectangle-Copy-14" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(29.000000, 29.000000) rotate(-135.000000) translate(-29.000000, -29.000000) " x="9.5" y="9.5" width="39" height="39"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9,6 +9,8 @@ click==8.1.8
 colorama==0.4.6
 decorator==4.4.2
 Django==5.0.6
+djangorestframework==3.16.0
+djangorestframework_simplejwt==5.5.0
 Flask==3.1.0
 Flask-Bcrypt==1.0.1
 Flask-Login==0.6.3
@@ -36,6 +38,7 @@ phonenumbers==8.13.42
 pillow==10.4.0
 pluggy==1.5.0
 proglog==0.1.10
+PyJWT==2.9.0
 PyPDF2==3.0.1
 PySocks==1.7.1
 pytest==8.3.2
