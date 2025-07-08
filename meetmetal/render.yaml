@@ -3,8 +3,7 @@ services:
     name: luxxon
     env: python
     buildCommand: |
-      pip install --upgrade pip setuptools wheel
+      pip install --upgrade pip
       pip install -r requirements.txt
-    startCommand: gunicorn drv.wsgi:application
-    branch: main
-    plan: free
+    startCommand: gunicorn meetmetal.wsgi:application
+ 
