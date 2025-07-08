@@ -4,6 +4,9 @@ services:
     env: python
     buildCommand: |
       pip install --upgrade pip
+      pip install --upgrade setuptools wheel
       pip install -r requirements.txt
     startCommand: gunicorn meetmetal.wsgi:application
- 
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
