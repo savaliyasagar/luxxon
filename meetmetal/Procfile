@@ -1,1 +1,1 @@
-web: gunicorn luxxon.wsgi
+web: gunicorn meetmetal.wsgi
