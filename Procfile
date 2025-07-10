@@ -1,1 +1,1 @@
-web: gunicorn meetmetal.wsgi
+web: gunicorn meetmetal.meetmetal.wsgi
