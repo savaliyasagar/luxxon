@@ -1319,9 +1319,9 @@
   "model": "home.aboutus",
   "pk": 1,
   "fields": {
-    "ourstory": "At Luxxon Hardware, our journey began with a simple vision ï¿½ to bring strength, style, and precision to every home and commercial space. What started as a small workshop has grown into a trusted brand known for quality, innovation, and craftsmanship in the world of architectural hardware.\r\n\r\nWith decades of combined experience and a deep-rooted passion for excellence, Luxxon has become synonymous with durability and elegance. We specialize in a wide range of premium products including brass hinges, tower bolts, glass fittings, brass fittings, and gate hooks ï¿½ all designed to meet the highest standards of functionality and design.",
+    "ourstory": "At Luxxon Hardware, our journey began with a simple vision Ã¯Â¿Â½ to bring strength, style, and precision to every home and commercial space. What started as a small workshop has grown into a trusted brand known for quality, innovation, and craftsmanship in the world of architectural hardware.\r\n\r\nWith decades of combined experience and a deep-rooted passion for excellence, Luxxon has become synonymous with durability and elegance. We specialize in a wide range of premium products including brass hinges, tower bolts, glass fittings, brass fittings, and gate hooks Ã¯Â¿Â½ all designed to meet the highest standards of functionality and design.",
     "storyimg": "about/about-500x500.jpg",
-    "quality": "At Luxxon Hardware, quality isnï¿½t just a standard ï¿½ itï¿½s our promise.\r\n\r\nWe believe that hardware should not only serve its purpose but also stand the test of time. Thatï¿½s why every product we manufacture is crafted with precision, tested for strength, and designed for excellence. From premium-grade raw materials to advanced manufacturing techniques, we ensure that every hinge, bolt, and fitting meets rigorous durability and performance benchmarks.\r\n\r\nOur team of skilled engineers and craftsmen follow a zero-compromise policy when it comes to quality. Each item undergoes multiple layers of inspection, ensuring flawless finish, smooth operation, and long-lasting reliability.",
+    "quality": "At Luxxon Hardware, quality isnÃ¯Â¿Â½t just a standard Ã¯Â¿Â½ itÃ¯Â¿Â½s our promise.\r\n\r\nWe believe that hardware should not only serve its purpose but also stand the test of time. ThatÃ¯Â¿Â½s why every product we manufacture is crafted with precision, tested for strength, and designed for excellence. From premium-grade raw materials to advanced manufacturing techniques, we ensure that every hinge, bolt, and fitting meets rigorous durability and performance benchmarks.\r\n\r\nOur team of skilled engineers and craftsmen follow a zero-compromise policy when it comes to quality. Each item undergoes multiple layers of inspection, ensuring flawless finish, smooth operation, and long-lasting reliability.",
     "qualityimg": "about/aboutquality_ebeq7Cc.png"
   }
 },
@@ -1337,7 +1337,7 @@
   "pk": 3,
   "fields": {
     "name": "Brass Hinges",
-    "description": "Luxxon Brass Hinges are the perfect blend of strength, elegance, and durability. Crafted from high-quality solid brass, these hinges are resistant to rust, corrosion, and wear ï¿½ making them ideal for both interior and exterior applications.",
+    "description": "Luxxon Brass Hinges are the perfect blend of strength, elegance, and durability. Crafted from high-quality solid brass, these hinges are resistant to rust, corrosion, and wear Ã¯Â¿Â½ making them ideal for both interior and exterior applications.",
     "image": "products/brasshinges.png",
     "homeproductimage": "products/brasshingess_hCNoTak.png",
     "url_name": "brass-hinges"
@@ -1348,7 +1348,7 @@
   "pk": 4,
   "fields": {
     "name": "Towerbolt",
-    "description": "Luxxon Tower Bolts are designed to deliver unmatched security, smooth operation, and lasting performance. Manufactured using premium-grade brass and stainless steel, our tower bolts are built to resist corrosion, wear, and daily use ï¿½ making them ideal for doors, windows, gates, and cabinets.",
+    "description": "Luxxon Tower Bolts are designed to deliver unmatched security, smooth operation, and lasting performance. Manufactured using premium-grade brass and stainless steel, our tower bolts are built to resist corrosion, wear, and daily use Ã¯Â¿Â½ making them ideal for doors, windows, gates, and cabinets.",
     "image": "products/towerbolt_hMfpikg.png",
     "homeproductimage": "products/towerbolt_rdsP5FN.png",
     "url_name": "tower-bolt"
