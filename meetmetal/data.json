@@ -273,6 +273,19 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-07-11T05:28:46.892Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "Towerbolt",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -1336,7 +1349,7 @@
   "fields": {
     "name": "Towerbolt",
     "description": "Luxxon Tower Bolts are designed to deliver unmatched security, smooth operation, and lasting performance. Manufactured using premium-grade brass and stainless steel, our tower bolts are built to resist corrosion, wear, and daily use — making them ideal for doors, windows, gates, and cabinets.",
-    "image": "products/towerbolt.jpg",
+    "image": "products/towerbolt_hMfpikg.png",
     "homeproductimage": "products/towerbolt_rdsP5FN.png",
     "url_name": "tower-bolt"
   }
