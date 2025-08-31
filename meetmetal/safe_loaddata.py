@@ -12,10 +12,10 @@ for obj in data:
         print(f"Handling CatalogPage page_number={page_number}...")
 
         CatalogPage.objects.update_or_create(
-            page_number=page_number,
-            defaults={
-                "pdf_file": fields.get("pdf_file", ""),
-                "pdf_file_name": fields.get("pdf_file_name", ""),
-                "product_name": fields.get("product_name", ""),
-            }
-        )
+    page_number=page_number,
+    defaults={
+        "front_image": fields.get("front_image", "default.jpg"),
+        "back_image": fields.get("back_image", "default.jpg"),
+    }
+)
+
